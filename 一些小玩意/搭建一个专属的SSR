@@ -5,7 +5,7 @@
     使用xshell登录服务器后命令行输入会出现卡顿，可使用vi /etc/ssh/sshd_config修改dns设置，将UseDNS yes改为UseDNS no。此步骤为安装ssr前置条件，否则可能会出现ssr无法连接的问题。
 3、安装ssr：
     使用wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadowsocksR.sh安装ssr，并完成密码和端口设置。
-    安装完成后记录ssr信息，使用shadowsocksR进行连接，此时ssr已搭建完成。
+    安装完成后记录ssr信息，使用shadowsocksR进行连接，代理模式选择全局模式，代理规则选择绕过xxx，此时ssr已搭建完成。
 4、可使用锐速对服务器进行加速：
     安装锐速需要降级内核，若为CentOS7 x64系统，使用wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/hombo125/doubi/master/rskernel.sh && bash rskernel.sh
 指令降级内核，降级完成后服务器将重启。
